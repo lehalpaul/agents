@@ -331,6 +331,16 @@ importers:
         specifier: workspace:*
         version: link:../..
 
+  extensions/gtm-agent:
+    dependencies:
+      playwright-core:
+        specifier: 1.50.1
+        version: 1.50.1
+    devDependencies:
+      openclaw:
+        specifier: workspace:*
+        version: link:../..
+
   extensions/imessage:
     devDependencies:
       openclaw:
@@ -4713,6 +4723,11 @@ packages:
 
   pixelmatch@7.1.0:
     resolution: {integrity: sha512-1wrVzJ2STrpmONHKBy228LM1b84msXDUoAzVEl0R8Mz4Ce6EPr+IVtxm8+yvrqLYMHswREkjYFaMxnyGnaY3Ng==}
+    hasBin: true
+
+  playwright-core@1.50.1:
+    resolution: {integrity: sha512-ra9fsNWayuYumt+NiM069M6OkcRb1FZSK8bgi66AtpFoWkg2+y0bJSNmkFrWhMbEBbVKC/EruAHH3g0zmtwGmQ==}
+    engines: {node: '>=18'}
     hasBin: true
 
   playwright-core@1.58.1:
@@ -10358,6 +10373,8 @@ snapshots:
   pixelmatch@7.1.0:
     dependencies:
       pngjs: 7.0.0
+
+  playwright-core@1.50.1: {}
 
   playwright-core@1.58.1: {}
 

@@ -1,0 +1,40 @@
+{
+  "id": "gtm-agent",
+  "name": "GTM Agent",
+  "description": "Go-To-Market automation: prospect research, CRM management, email outreach, and social engagement.",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "notionContactsDbId": { "type": "string", "description": "Notion Contacts database ID" },
+      "notionContactsDsId": { "type": "string", "description": "Notion Contacts data_source_id" },
+      "notionDealsDbId": { "type": "string", "description": "Notion Deals database ID" },
+      "notionDealsDsId": { "type": "string", "description": "Notion Deals data_source_id" },
+      "notionActivitiesDbId": { "type": "string", "description": "Notion Activities database ID" },
+      "notionActivitiesDsId": {
+        "type": "string",
+        "description": "Notion Activities data_source_id"
+      },
+      "targetMarket": {
+        "type": "string",
+        "description": "Target market description for prospect research"
+      },
+      "targetLocation": { "type": "string", "description": "Target geographic location" },
+      "dailyEmailLimit": { "type": "number", "description": "Max emails per day (default: 20)" },
+      "dailyLinkedInLimit": {
+        "type": "number",
+        "description": "Max LinkedIn actions per day (default: 15)"
+      },
+      "dailyXLimit": { "type": "number", "description": "Max X actions per day (default: 10)" },
+      "gmailAccount": {
+        "type": "string",
+        "description": "Gmail account to send from (uses gog CLI)"
+      },
+      "linkedInProfileDir": {
+        "type": "string",
+        "description": "Playwright persistent profile dir for LinkedIn"
+      },
+      "xProfileDir": { "type": "string", "description": "Playwright persistent profile dir for X" }
+    }
+  }
+}
